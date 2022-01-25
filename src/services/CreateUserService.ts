@@ -10,7 +10,7 @@ interface IUserRequest {
 }
 
 class CreateUserService {
-  async execute({ name, email, admin, password }: IUserRequest) {
+  async execute({ name, email, admin = false, password }: IUserRequest) {
 
     if (!email) {
       throw new Error("Email incorrect")
@@ -33,7 +33,7 @@ class CreateUserService {
       name,
       email,
       admin,
-      password: passwordHash, 
+      password: passwordHash,
     })
 
     await usersRepository.save(user)
