@@ -14,6 +14,9 @@ class User {
   email: string;
 
   @Column()
+  password: string;
+
+  @Column()
   admin: boolean;
 
   @CreateDateColumn()
@@ -22,7 +25,13 @@ class User {
   @UpdateDateColumn()
   updated_at: Date;
 
-  
+
+  constructor() {
+    if (!this.id) {
+      this.id = uuidv4()
+    }
+  }
+
 }
 
 export { User };
