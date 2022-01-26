@@ -15,19 +15,16 @@ class AuthenticateUserService {
 
     const user = await userRepositories.findOne({ email })
 
-    if (!user) {
-      throw new Error("Email or password incorrect")
-    }
+    if (!user) throw new Error("Email or password incorrect")
+
 
     const passwordCheck = await compare(password, user.password)
 
-    if (!passwordCheck) {
-      throw new Error("Email or password incorrect")
-    }
+    if (!passwordCheck) throw new Error("Email or password incorrect")
 
     const token = sign({ email: user.email }, "b4aeb7832a13b57621e6a58febd1afe6", {
       subject: user.id,
-      expiresIn: "1d"
+      expiresIn: "3d"
     })
 
     return token

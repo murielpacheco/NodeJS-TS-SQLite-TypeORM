@@ -20,9 +20,7 @@ class CreateComplimentService {
 
     const userReceiverExists = await userRepositories.findOne(user_receiver)
 
-    if (!userReceiverExists) {
-      throw new Error("User Receiver doesn't exists.")
-    }
+    if (!userReceiverExists) throw new Error("User Receiver doesn't exists.")
 
     const compliment = complimentRepositories.create({
       user_sender,
