@@ -1,4 +1,4 @@
-<h1 align="center">Valoriza</h1>
+<h1 align="center">NLW Together - Node.js</h1>
 
 ### Aplicação feita durante o evento NLW Together promovido pela [Rocketseat](https://www.rocketseat.com.br/).
 
