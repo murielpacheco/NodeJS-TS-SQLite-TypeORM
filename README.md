@@ -21,7 +21,7 @@ Valoriza é uma plataforma para promover o reconhecimento entre companheiros de 
 <ul>
   <li>Node.js: Ambiente para desenvolver aplicações em Javascript que rodam no lado do servidor</li>
   <li>Typescript: Superset do Javascript que ajuda na escrita do código durante o processo de desenvolvimento. Dando mais segurança aos desenvolvedores ao determinar os tipos de variados elementos do JS.</li>
-  <li>Express: Framework para o desenvolvimento de APIs dentro do Node sendo uma excelente escolha no uso para cconstruir aplicações web flexíveis e rápidas.</li>
+  <li>Express: Framework para o desenvolvimento de APIs dentro do Node sendo uma excelente escolha no uso para construir aplicações web flexíveis e rápidas.</li>
   <li>JSONWebToken: Utilizado na parte de autenticação da aplicação, o JWT é uma ótima opção para aplicações que exigem um token que será passado entre requisições para validações, autenticações e etc.</li>
   <li>TypeORM: Framework de ORM (Object-Relational Mapping) de fácil e intuitivo uso que faz toda a parte de abstração do que há dentro do banco de dados (tabelas, colunas, relacionamentos). Disponibilizando para nossa aplicação todos os dados necessários para desenvolvimento acontecer sem que a utilização de queries SQL seja necessária.</li>
   </br>
